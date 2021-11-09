@@ -20,7 +20,7 @@
     [Inject]
     public NavigationManager NavService { get; set; }
 
-    public Bug AddBug { get; set; } = new Bug();
+    public Bug AddBug { get; set; } = new Bug() {Priority = 5};
 
     protected void HandleValidSubmit()
     {
